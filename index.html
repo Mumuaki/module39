@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Галерея собак</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="gallery">
+      <section class="gallery__controls">
+        <h1 class="gallery__title">Галерея собак</h1>
+        <button class="gallery__button" type="button">Загрузить картинки</button>
+        <p class="gallery__error" role="alert" aria-live="polite"></p>
+      </section>
+      <section class="gallery__content">
+        <div class="loader" aria-hidden="true">
+          <div class="loader__spinner"></div>
+          <span class="loader__text">Загрузка...</span>
+        </div>
+        <div class="gallery__grid" aria-live="polite"></div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
